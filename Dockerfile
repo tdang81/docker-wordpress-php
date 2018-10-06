@@ -18,6 +18,11 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 RUN chmod +x wp-cli.phar
 RUN mv wp-cli.phar /usr/local/bin/wp
 
+#composer
+RUN apt-get install -y unzip
+RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
+RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
 # Remove apt lists to reduce image size
 RUN rm -rf /var/lib/apt/lists/*
 # Optional: error log file for php.
