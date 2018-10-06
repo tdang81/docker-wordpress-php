@@ -13,6 +13,11 @@ RUN docker-php-ext-install json
 # ZIP
 RUN apt-get install -y zlib1g-dev && docker-php-ext-configure zip --with-zlib-dir=/usr && docker-php-ext-install zip
 
+#wp cli
+RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+RUN chmod +x wp-cli.phar
+RUN mv wp-cli.phar /usr/local/bin/wp
+
 # Remove apt lists to reduce image size
 RUN rm -rf /var/lib/apt/lists/*
 # Optional: error log file for php.
