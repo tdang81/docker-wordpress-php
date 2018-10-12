@@ -1,0 +1,8 @@
+0.0.1
+add composer
+
+0.0.2
+add wp-cli
+
+0.0.3
+add email/phpmail support via mailhog
