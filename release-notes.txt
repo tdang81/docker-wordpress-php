@@ -6,3 +6,6 @@ add wp-cli
 
 0.0.3
 add email/phpmail support via mailhog
+
+0.0.4
+add GD Support
