@@ -9,3 +9,4 @@ add email/phpmail support via mailhog
 
 0.0.4
 add GD Support
+add soap Support

@@ -12,7 +12,7 @@ RUN apt-get install -y libmagickwand-dev --no-install-recommends && pecl install
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 RUN docker-php-ext-install gd
 # JSON
-RUN docker-php-ext-install json
+RUN docker-php-ext-install json soap
 # ZIP
 RUN apt-get install -y zlib1g-dev && docker-php-ext-configure zip --with-zlib-dir=/usr && docker-php-ext-install zip
 
