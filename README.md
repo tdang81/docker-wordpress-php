@@ -3,10 +3,10 @@ This image contains fully working wordpress environment. It also provide standar
 
 #Build
 ```
-docker build -t tdang81/wordpress-php:php7.1-0.0.4 .
+docker build -t tdang81/wordpress-php:php5.6-0.0.4 .
 ```
 
 #Push to docker hub
 ```
-sudo docker push tdang81/wordpress-php:php7.1-0.0.4
+sudo docker push tdang81/wordpress-php:php5.6-0.0.4
 ```
